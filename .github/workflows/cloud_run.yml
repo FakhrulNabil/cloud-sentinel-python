@@ -1,0 +1,27 @@
+name: Hourly Cloud Health Check
+
+on:
+  push:                   # Runs whenever you upload code
+  schedule:
+    - cron: '0 * * * *'   # This is "Cloud-speak" for "Run every hour"
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest # The Cloud OS (Linux)
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run Sentinel Script
+        run: python sentinel.py
+
+      - name: Save Log File
+        uses: actions/upload-artifact@v4
+        with:
+          name: health-check-log
+          path: status_log.txt

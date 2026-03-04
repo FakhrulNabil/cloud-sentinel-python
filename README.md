@@ -15,3 +15,6 @@ This project demonstrates a **Serverless Monitoring Solution**. Instead of maint
 * **Automated Scheduling:** Runs every hour using Cron syntax.
 * **Error Reporting:** Returns non-zero exit codes on failure to trigger Cloud alerts.
 * **Artifact Logging:** Saves health logs for post-deployment analysis.
+
+<img width="1419" height="599" alt="image" src="https://github.com/user-attachments/assets/b5064080-4405-4820-9195-0edb39139029" />
+

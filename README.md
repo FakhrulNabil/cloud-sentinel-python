@@ -1,3 +1,5 @@
+[![Hourly Cloud Health Check](https://github.com/FakhrulNabil/cloud-sentinel-python/actions/workflows/cloud_run.yml/badge.svg)](https://github.com/FakhrulNabil/cloud-sentinel-python/actions/workflows/cloud_run.yml)
+
 # Cloud-Sentinel: Automated Python Health Monitor
 
 ## ☁️ Cloud Strategy
